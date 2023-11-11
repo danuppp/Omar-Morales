@@ -1,0 +1,578 @@
+* {
+  padding: 0;
+  margin: 0;
+  background-color: rgb(250, 250, 250);
+}
+
+h1 {
+  text-align: center;
+  font-family: Newsreader;
+  font-size: 3rem;
+  letter-spacing: -1.28px;
+}
+
+h2 {
+  padding-top: 2rem;
+  color: #000;
+  text-align: center;
+  font-family: Newsreader;
+  font-size: 2rem;
+  font-style: italic;
+}
+
+h3 {
+  color: #000;
+  font-family: Unna;
+  font-size: 3rem;
+}
+
+main {
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  flex-wrap: wrap;
+  padding-bottom: 40px;
+}
+main .portada {
+  width: 19.6rem;
+  height: 29.93REM;
+  border-radius: 50px;
+  transition: 1s;
+}
+main .portada:hover {
+  transform: scale(1.03);
+  filter: none;
+}
+main .section-presentacion {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .section-presentacion .descripcion {
+  width: 15rem;
+}
+main .section-presentacion .descripcion span {
+  display: block;
+  color: rgba(0, 0, 0, 0.7529411765);
+  text-align: center;
+  font-family: Antic Didone;
+  font-size: 1.3rem;
+}
+
+.main-abtme {
+  display: grid;
+  gap: 10px;
+  grid-template-areas: "titulo-abtme" "container-abtme" "titulo-education" "container-education" "titulo-s_skills" "parrafo-s_skills";
+  padding-bottom: 40px;
+}
+.main-abtme .titulo-abtme {
+  grid-area: titulo-abtme;
+}
+.main-abtme .container-abtme {
+  grid-area: container-abtme;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 7rem;
+  padding-top: 3%;
+  flex-wrap: wrap;
+}
+.main-abtme .container-abtme img {
+  width: 14rem;
+  height: 22rem;
+  border-radius: 50px;
+  transition: 1s;
+}
+.main-abtme .container-abtme img:hover {
+  transform: scale(1.03);
+  filter: none;
+}
+.main-abtme .titulo-education {
+  grid-area: titulo-education;
+}
+.main-abtme .container-education {
+  grid-area: container-education;
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.main-abtme .container-education .column-edc {
+  padding-top: 3%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.main-abtme .container-education .column-edc ul {
+  list-style: none;
+}
+.main-abtme .container-education .column-edc ul li {
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+.main-abtme .container-education .column-edc ul li .card {
+  width: 23rem;
+  height: 13rem;
+  transition: 1s;
+}
+.main-abtme .container-education .column-edc ul li .card .card a img {
+  height: 4rem;
+}
+.main-abtme .container-education .column-edc ul li .card:hover {
+  transform: scale(1.03);
+  filter: none;
+}
+.main-abtme .titulo-s_skills {
+  grid-area: titulo-s_skills;
+}
+.main-abtme .parrafo-s_skills {
+  grid-area: parrafo-s_skills;
+  width: 100%;
+}
+.main-abtme .parrafo-s_skills #parrafo-s_skills {
+  color: rgba(0, 0, 0, 0.8431372549);
+  text-align: justify;
+  font-family: NanumMyeongjo;
+  font-size: 20px;
+  letter-spacing: -0.6px;
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top: 3%;
+  padding-bottom: 5%;
+}
+
+.main-my_prjc {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr;
+  grid-template-areas: "titulo-prjc" "container-video" "title-film" "container-film" "title-theatre" "container-theatre" "container-film_footer";
+  padding-bottom: 40px;
+}
+.main-my_prjc .titulo-my_prjc {
+  grid-area: titulo-prjc;
+}
+.main-my_prjc .container-video {
+  grid-area: container-video;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+  padding-top: 3%;
+}
+.main-my_prjc .film-title {
+  grid-area: title-film;
+}
+.main-my_prjc .container-film {
+  grid-area: container-film;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.main-my_prjc .container-film .columna-film {
+  padding-right: 10%;
+  padding-left: 10%;
+}
+.main-my_prjc .container-film .columna-film ul {
+  list-style: none;
+}
+.main-my_prjc .theatre-title {
+  grid-area: title-theatre;
+}
+.main-my_prjc .container-theatre {
+  grid-area: container-theatre;
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.main-my_prjc .container-theatre .columna-theatre {
+  padding-right: 10%;
+  padding-left: 10%;
+}
+.main-my_prjc .container-theatre .columna-theatre ul {
+  list-style: none;
+}
+.main-my_prjc .container-theatre .columna-theatre ul li {
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+.main-my_prjc .container-theatre .columna-theatre ul #li-theatre {
+  padding-top: 1.5rem;
+  padding-bottom: 2rem;
+}
+.main-my_prjc .container-film_footer {
+  grid-area: container-film_footer;
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-bottom: 2rem;
+}
+.main-my_prjc .container-film_footer div {
+  padding-top: 3%;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.main-gallery {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 4fr;
+  grid-template-areas: "titulo-gll" "container1" "container2" "container3";
+  padding-bottom: 40px;
+}
+.main-gallery .titulo-gll {
+  grid-area: titulo-gll;
+}
+.main-gallery img {
+  transition: 1s;
+}
+.main-gallery img:hover {
+  transform: scale(1.03);
+  filter: none;
+}
+.main-gallery .container1-gallery {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding-top: 3rem;
+  grid-area: container1;
+}
+.main-gallery .container1-gallery img {
+  width: 16rem;
+  height: 22rem;
+  object-fit: cover;
+}
+.main-gallery .containder2-gallery {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding-top: 3rem;
+  grid-area: container2;
+}
+.main-gallery .containder2-gallery iframe {
+  width: 37rem;
+  height: 22rem;
+  object-fit: cover;
+}
+.main-gallery .container3-gallery {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding-top: 3rem;
+  grid-area: container3;
+}
+.main-gallery .container3-gallery img {
+  width: 16rem;
+  height: 22rem;
+  object-fit: cover;
+}
+.main-gallery .container3-gallery iframe {
+  width: 37rem;
+  height: 22rem;
+  object-fit: cover;
+}
+
+.container-ctc {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 20%;
+  padding-bottom: 10px;
+}
+.container-ctc .columna-ctc {
+  padding-top: 3%;
+  padding-left: 20%;
+}
+.container-ctc .columna-ctc .img-ctcme1 {
+  width: 11rem;
+  height: 17rem;
+  border-radius: 35px;
+  margin-left: -2.5rem;
+  margin-top: -3rem;
+  position: relative;
+}
+.container-ctc .columna-ctc .img-ctcme2 {
+  width: 11rem;
+  height: 17rem;
+  border-radius: 35px;
+  margin-top: -8.3rem;
+  margin-left: 6rem;
+  position: relative;
+}
+.container-ctc .columna-ctc .img-ctcme3 {
+  width: 11rem;
+  height: 17rem;
+  border-radius: 35px;
+  margin-top: -7rem;
+  margin-left: -3.1rem;
+  position: relative;
+}
+.container-ctc .columna-text {
+  padding-top: 3%;
+  padding-right: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container-ctc .columna-text .text-ctc {
+  text-align: end;
+}
+.container-ctc .columna-text .text-ctc span {
+  display: block;
+  color: rgba(0, 0, 0, 0.7333333333);
+}
+.container-ctc .columna-text .text-ctc i {
+  color: #000;
+  font-size: 1.2rem;
+}
+
+header {
+  background: rgb(240, 240, 240);
+  width: 100%;
+}
+header nav {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+header nav .container-titulo {
+  padding-top: 1.8rem;
+  padding-left: 4.3rem;
+}
+header nav .container-titulo .titulo_nav {
+  color: #000;
+  font-family: Unna;
+  font-size: 2rem;
+}
+header nav #navbarNavAltMarkup {
+  justify-content: end;
+}
+
+@media (max-width: 799px) {
+  h1 {
+    text-align: center;
+    font-family: Newsreader;
+    font-size: 2.3rem;
+    letter-spacing: -1.28px;
+  }
+  h2 {
+    padding-top: 1.8rem;
+    color: #000;
+    text-align: center;
+    font-family: Newsreader;
+    font-size: 2rem;
+    font-style: italic;
+  }
+  h3 {
+    color: #000;
+    font-family: Unna;
+    font-size: 2.3rem;
+  }
+  nav .container-titulo {
+    padding-top: 1.5rem;
+    padding-left: 4rem;
+  }
+  main {
+    padding-top: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+  main .portada {
+    width: 19.6rem;
+    height: 29.93REM;
+  }
+  .main-abtme .container-abtme {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    padding-top: 2%;
+    flex-wrap: wrap;
+  }
+  .main-abtme .container-education .column-edc {
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 2rem;
+  }
+  .main-abtme .container-education .column-edc ul li {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  .main-abtme .container-education .column-edc ul li .card {
+    height: 13rem;
+    width: 20rem;
+  }
+  .main-abtme .container-education .column-edc ul li .card .card a img {
+    height: 3rem;
+  }
+  .main-abtme .parrafo-s_skills #parrafo-s_skills {
+    color: rgba(0, 0, 0, 0.662745098);
+    text-align: justify;
+    font-family: NanumMyeongjo;
+    font-size: 1.2rem;
+  }
+  .main-my_prjc .container-video {
+    gap: 5%;
+  }
+  .main-my_prjc .container-video iframe {
+    width: 25rem;
+    height: 14rem;
+  }
+  .main-my_prjc .container-film {
+    flex-wrap: nowrap;
+  }
+  .main-my_prjc .container-film .columna-film {
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+  .main-my_prjc .container-film .columna-film ul {
+    list-style: none;
+  }
+  .main-my_prjc .container-film .columna-film ul li {
+    padding-top: 3%;
+    padding-bottom: 3%;
+  }
+  .main-my_prjc .container-film .columna-film ul #li-film {
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+  .main-my_prjc .container-theatre {
+    flex-wrap: nowrap;
+  }
+  .main-my_prjc .container-theatre .columna-theatre {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .main-my_prjc .container-theatre .columna-theatre ul {
+    list-style: none;
+  }
+  .main-my_prjc .container-theatre .columna-theatre ul li {
+    padding-top: 3%;
+    padding-bottom: 3%;
+  }
+  .main-my_prjc .container-theatre .columna-theatre ul #li-theatre {
+    padding-top: 1.8rem;
+    padding-bottom: 2.2rem;
+  }
+  .container-film_footer div iframe {
+    padding-top: 2rem;
+    width: 25rem;
+    height: 14rem;
+  }
+  .container-ctc {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20%;
+  }
+  .container-ctc .columna-ctc .img-ctcme1 {
+    margin-left: -2.5rem;
+    margin-top: -2rem;
+    position: relative;
+  }
+  .container-ctc .columna-ctc .img-ctcme2 {
+    margin-top: -6.3rem;
+    margin-left: 6rem;
+    position: relative;
+  }
+  .container-ctc .columna-ctc .img-ctcme3 {
+    margin-top: -7rem;
+    margin-left: -3.1rem;
+    position: relative;
+  }
+  .container-ctc .columna-text {
+    padding-top: 10%;
+    padding-right: 1rem;
+    padding-bottom: 5rem;
+  }
+  .container-ctc .columna-text .text-ctc {
+    text-align: center;
+  }
+  .container-ctc .columna-text .text-ctc i {
+    font-size: 2rem;
+  }
+  .main-gallery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .main-gallery .container1-gallery {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-top: 3rem;
+  }
+  .main-gallery .container1-gallery img {
+    width: 20rem;
+    height: 22rem;
+    object-fit: cover;
+  }
+  .main-gallery .containder2-gallery {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-top: 3rem;
+  }
+  .main-gallery .containder2-gallery iframe {
+    width: 20rem;
+    height: 22rem;
+    object-fit: cover;
+    height: 13rem;
+  }
+  .main-gallery .container3-gallery {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-top: 3rem;
+  }
+  .main-gallery .container3-gallery img {
+    width: 20rem;
+    height: 22rem;
+    object-fit: cover;
+  }
+  .main-gallery .container3-gallery iframe {
+    width: 20rem;
+    height: 22rem;
+    object-fit: cover;
+    height: 13rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
