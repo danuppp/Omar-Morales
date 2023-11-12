@@ -4,6 +4,12 @@
     border-radius: 35px;
 }
 
+@mixin size-img-ctc-mqs {
+    width: 20rem;
+    height: 13rem;
+    border-radius: 35px;
+}
+
 @mixin flex-column-center {
     display: flex;
     flex-direction: column;
@@ -38,8 +44,8 @@
 }
 
 @mixin size-contentGallery {
-    width: 37rem;
-    height: 22rem;
+    width: 42rem;
+    height: 23rem;
     object-fit: cover;
 }
 

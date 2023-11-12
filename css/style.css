@@ -231,7 +231,7 @@ main .section-presentacion .descripcion span {
   gap: 10px;
   grid-template-columns: 1fr;
   grid-template-rows: 4fr;
-  grid-template-areas: "titulo-gll" "container1" "container2" "container3";
+  grid-template-areas: "titulo-gll" "container1" "container2" "container3" "container4";
   padding-bottom: 40px;
 }
 .main-gallery .titulo-gll {
@@ -254,9 +254,12 @@ main .section-presentacion .descripcion span {
   grid-area: container1;
 }
 .main-gallery .container1-gallery img {
-  width: 16rem;
-  height: 22rem;
+  width: 18rem;
+  height: 23rem;
   object-fit: cover;
+}
+.main-gallery .container1-gallery #corto1 {
+  width: 50rem;
 }
 .main-gallery .containder2-gallery {
   display: flex;
@@ -268,8 +271,8 @@ main .section-presentacion .descripcion span {
   grid-area: container2;
 }
 .main-gallery .containder2-gallery iframe {
-  width: 37rem;
-  height: 22rem;
+  width: 42rem;
+  height: 23rem;
   object-fit: cover;
 }
 .main-gallery .container3-gallery {
@@ -282,13 +285,25 @@ main .section-presentacion .descripcion span {
   grid-area: container3;
 }
 .main-gallery .container3-gallery img {
-  width: 16rem;
-  height: 22rem;
+  width: 90%;
+}
+.main-gallery .container4-gallery {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding-top: 3rem;
+  grid-area: container4;
+}
+.main-gallery .container4-gallery img {
+  width: 15rem;
+  height: 21rem;
   object-fit: cover;
 }
-.main-gallery .container3-gallery iframe {
-  width: 37rem;
-  height: 22rem;
+.main-gallery .container4-gallery iframe {
+  width: 42rem;
+  height: 23rem;
   object-fit: cover;
 }
 
@@ -485,6 +500,39 @@ header nav #navbarNavAltMarkup {
     width: 25rem;
     height: 14rem;
   }
+  .main-gallery .container1-gallery img {
+    width: 90%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .main-gallery .container1-gallery #corto1 {
+    width: 90%;
+    height: 20rem;
+    object-fit: cover;
+  }
+  .main-gallery .containder2-gallery iframe {
+    width: 90%;
+    height: 19rem;
+    object-fit: cover;
+  }
+  .main-gallery .container3-gallery img {
+    width: 90%;
+  }
+  .main-gallery .container4-gallery img {
+    width: 90%;
+    height: 25rem;
+    object-fit: cover;
+  }
+  .main-gallery .container4-gallery #corto2 {
+    width: 90%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .main-gallery .container4-gallery iframe {
+    width: 90%;
+    height: 19rem;
+    object-fit: cover;
+  }
   .container-ctc {
     width: 100%;
     display: flex;
@@ -492,21 +540,6 @@ header nav #navbarNavAltMarkup {
     justify-content: center;
     align-items: center;
     gap: 20%;
-  }
-  .container-ctc .columna-ctc .img-ctcme1 {
-    margin-left: -2.5rem;
-    margin-top: -2rem;
-    position: relative;
-  }
-  .container-ctc .columna-ctc .img-ctcme2 {
-    margin-top: -6.3rem;
-    margin-left: 6rem;
-    position: relative;
-  }
-  .container-ctc .columna-ctc .img-ctcme3 {
-    margin-top: -7rem;
-    margin-left: -3.1rem;
-    position: relative;
   }
   .container-ctc .columna-text {
     padding-top: 10%;
@@ -519,40 +552,20 @@ header nav #navbarNavAltMarkup {
   .container-ctc .columna-text .text-ctc i {
     font-size: 2rem;
   }
-  .main-gallery {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 10px;
-  }
-  .main-gallery .container1-gallery {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    gap: 20px;
-    padding-top: 3rem;
-  }
+}
+@media (min-width: 800px) {
   .main-gallery .container1-gallery img {
-    width: 20rem;
-    height: 22rem;
+    width: 23rem;
+    height: 28rem;
     object-fit: cover;
   }
-  .main-gallery .containder2-gallery {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    gap: 20px;
-    padding-top: 3rem;
+  .main-gallery .container1-gallery #corto1 {
+    width: 50rem;
   }
   .main-gallery .containder2-gallery iframe {
-    width: 20rem;
-    height: 22rem;
+    width: 50rem;
+    height: 30rem;
     object-fit: cover;
-    height: 13rem;
   }
   .main-gallery .container3-gallery {
     display: flex;
@@ -561,17 +574,202 @@ header nav #navbarNavAltMarkup {
     flex-wrap: wrap;
     gap: 20px;
     padding-top: 3rem;
+    grid-area: container3;
   }
   .main-gallery .container3-gallery img {
-    width: 20rem;
-    height: 22rem;
+    width: 90%;
+  }
+  .main-gallery .container4-gallery img {
+    width: 23rem;
+    height: 28rem;
     object-fit: cover;
   }
-  .main-gallery .container3-gallery iframe {
-    width: 20rem;
-    height: 22rem;
+  .main-gallery .container4-gallery iframe {
+    width: 50rem;
+    height: 30rem;
     object-fit: cover;
-    height: 13rem;
+  }
+}
+@media (min-width: 1000px) {
+  .main-gallery .container1-gallery img {
+    width: 25rem;
+    height: 30rem;
+    object-fit: cover;
+  }
+  .main-gallery .container1-gallery #corto1 {
+    width: 60rem;
+  }
+  .main-gallery .containder2-gallery iframe {
+    width: 52rem;
+    height: 32rem;
+    object-fit: cover;
+  }
+  .main-gallery .container3-gallery {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-top: 3rem;
+    grid-area: container3;
+  }
+  .main-gallery .container3-gallery img {
+    width: 90%;
+  }
+  .main-gallery .container4-gallery img {
+    width: 25rem;
+    height: 32rem;
+    object-fit: cover;
+  }
+  .main-gallery .container4-gallery iframe {
+    width: 52rem;
+    height: 32rem;
+    object-fit: cover;
+  }
+}
+@media (min-width: 1300px) {
+  main {
+    padding-top: 10px;
+  }
+  main .portada {
+    width: 25rem;
+    height: 37rem;
+  }
+  .main-om {
+    padding-top: 5rem;
+  }
+  .main-abtme .container-abtme img {
+    width: 20rem;
+    height: 29rem;
+  }
+  .main-my_prjc iframe {
+    width: 52rem;
+    height: 30rem;
+  }
+  .main-my_prjc .container-film_footer iframe {
+    width: 35rem;
+    height: 20rem;
+  }
+  .main-gallery .container1-gallery img {
+    width: 18rem;
+    height: 30rem;
+    object-fit: cover;
+  }
+  .main-gallery .container1-gallery #corto1 {
+    width: 40rem;
+  }
+  .main-gallery .containder2-gallery iframe {
+    width: 35rem;
+    height: 24rem;
+    object-fit: cover;
+  }
+  .main-gallery .container3-gallery {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-top: 3rem;
+    grid-area: container3;
+  }
+  .main-gallery .container3-gallery img {
+    width: 90%;
+  }
+  .main-gallery .container4-gallery img {
+    width: 20rem;
+    height: 26rem;
+    object-fit: cover;
+  }
+  .main-gallery .container4-gallery iframe {
+    width: 38rem;
+    height: 26rem;
+    object-fit: cover;
+  }
+  .container-ctc .columna-ctc .img-ctcme1 {
+    width: 16rem;
+    height: 23rem;
+  }
+  .container-ctc .columna-ctc .img-ctcme2 {
+    width: 15rem;
+    height: 22rem;
+  }
+  .container-ctc .columna-ctc .img-ctcme3 {
+    width: 16rem;
+    height: 23rem;
+  }
+}
+@media (min-width: 1500px) {
+  .main-gallery .container1-gallery img {
+    width: 23rem;
+    height: 35rem;
+    object-fit: cover;
+  }
+  .main-gallery .container1-gallery #corto1 {
+    width: 45rem;
+  }
+  .main-gallery .containder2-gallery iframe {
+    width: 43rem;
+    height: 32rem;
+    object-fit: cover;
+  }
+  .main-gallery .container3-gallery {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-top: 3rem;
+    grid-area: container3;
+  }
+  .main-gallery .container3-gallery img {
+    width: 90%;
+  }
+  .main-gallery .container4-gallery img {
+    width: 24rem;
+    height: 32rem;
+    object-fit: cover;
+  }
+  .main-gallery .container4-gallery iframe {
+    width: 43rem;
+    height: 32rem;
+    object-fit: cover;
+  }
+}
+@media (min-width: 1740px) {
+  .main-gallery .container1-gallery img {
+    width: 28rem;
+    height: 35rem;
+    object-fit: cover;
+  }
+  .main-gallery .container1-gallery #corto1 {
+    width: 50rem;
+  }
+  .main-gallery .containder2-gallery iframe {
+    width: 52rem;
+    height: 32rem;
+    object-fit: cover;
+  }
+  .main-gallery .container3-gallery {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-top: 3rem;
+    grid-area: container3;
+  }
+  .main-gallery .container3-gallery img {
+    width: 90%;
+  }
+  .main-gallery .container4-gallery img {
+    width: 25rem;
+    height: 32rem;
+    object-fit: cover;
+  }
+  .main-gallery .container4-gallery iframe {
+    width: 52rem;
+    height: 32rem;
+    object-fit: cover;
   }
 }
 
